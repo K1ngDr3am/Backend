@@ -6,7 +6,7 @@ const swaggerOptions: Options = {
     info: {
       title: "Backend Service API",
       version: "1.0.0",
-      description: "API para Catálogo de Productos y Gestión de Pedidos",
+      description: "API para Catálogo de Autos y Gestión de lugares",
     },
     servers: [
       {
@@ -14,7 +14,7 @@ const swaggerOptions: Options = {
       },
     ],
   },
-  apis: ["./src/routes/productRoutes.ts"],
+  apis: ["./src/routes/carsRoutes.ts"],
 };
 
 const swaggerSpec = swaggerJsdoc(swaggerOptions);

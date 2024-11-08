@@ -4,7 +4,7 @@ import { Cars } from "../entities/Cars"
 
 const CarsRepository = AppDataSource.getRepository(Cars);
 
-// GET - Obtener Todos los Productos
+// GET - Obtener Todos los Autos
 export const getAllCars = async(red: Request, res: Response) => {
     try {
       const Cars = await CarsRepository.find();
@@ -24,10 +24,10 @@ export const getCarsById = async(req: Request, res: Response) => {
         if(Cars) {
           res.json(Cars);
         } else {
-          res.status(404).json({ message: "Producto no encontrado" });
+          res.status(404).json({ message: " no encontrado" });
         }
       } catch(error) {
-        res.status(500).json({ message: "Error al obtener el producto." });
+        res.status(500).json({ message: "Error al obtener el Auto." });
       }
     };
 
@@ -64,10 +64,10 @@ export const updateCars = async(req: Request, res: Response) => {
           await CarsRepository.save(Cars);
           res.json(Cars);
         } else {
-          res.status(404).json({ message: "Producto no encontrado" });
+          res.status(404).json({ message: "Auto no encontrado" });
         }
       } catch(error) {
-        res.status(500).json({ message: "Error al actualizar el producto." });
+        res.status(500).json({ message: "Error al actualizar el Auto." });
       }
     };
 

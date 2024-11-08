@@ -18,10 +18,10 @@ const carsRoutes = Router();
 
 /**
  * @swagger
- * /api/products:
+ * /api/cars:
  *   get:
  *      summary: Obtener todos los autos
- *      tags: [Autos]
+ *      tags: [Cars]
  *      responses:
  *        200:
  *          description: Lista de autos
@@ -30,10 +30,10 @@ carsRoutes.get("/", getAllCars);
 
 /**
  * @swagger
- * /api/products/{id}:
+ * /api/cars/{id}:
  *   get:
  *     summary: Obtener un producto por ID
- *     tags: [Autos]
+ *     tags: [Cars]
  *     parameters:
  *       - in: path
  *         name: id
@@ -51,10 +51,10 @@ carsRoutes.get("/:id", getCarsById);
 
 /**
  * @swagger
- * /api/products:
+ * /api/cars:
  *   post:
  *     summary: Crear un nuevo auto
- *     tags: [Autos]
+ *     tags: [Cars]
  *     requestBody:
  *       required: true
  *       content:
@@ -82,10 +82,10 @@ carsRoutes.post("/", createCars);
 
 /**
  * @swagger
- * /api/products/{id}:
+ * /api/cars/{id}:
  *   put:
  *     summary: Actualizar un auto existente
- *     tags: [Autos]
+ *     tags: [Cars]
  *     parameters:
  *       - in: path
  *         name: id
@@ -118,10 +118,10 @@ carsRoutes.put("/:id", updateCars);
 
 /**
  * @swagger
- * /api/products/{id}:
+ * /api/cars/{id}:
  *   delete:
  *     summary: Eliminar un auto
- *     tags: [Autos]
+ *     tags: [Cars]
  *     parameters:
  *       - in: path
  *         name: id
