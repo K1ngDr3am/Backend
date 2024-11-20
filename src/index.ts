@@ -28,7 +28,7 @@ AppDataSource.initialize()
       console.log(`API Products http://localhost:${PORT}/api/cars`);
 
       console.log(`Documentación:`);
-      console.log(`Swagger en http://localhost:${PORT}/api-cars`);
+      console.log(`Swagger en http://localhost:${PORT}/api.cars`);
     });
   })
   .catch((error) => console.log(error));

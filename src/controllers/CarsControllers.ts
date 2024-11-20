@@ -5,7 +5,7 @@ import { Cars } from "../entities/Cars"
 const CarsRepository = AppDataSource.getRepository(Cars);
 
 // GET - Obtener Todos los Productos
-export const getAllCars = async(red: Request, res: Response) => {
+export const getAllCars = async(req: Request, res: Response) => {
     try {
       const Cars = await CarsRepository.find();
       res.json(Cars);
